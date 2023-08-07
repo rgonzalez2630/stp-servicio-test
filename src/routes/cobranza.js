@@ -14,14 +14,14 @@ router.post('/cobranza', (req, res) => {
 
     var https = require('https');
 
-    var url_ = 'ep-dot-si-nube.appspot.com'
+    var url_ = 'stp-kmondqkg2a-uc.a.run.app'
     if (PRUEBAS) {
-        url_ = 'ep-dot-facturanube.appspot.com';
+        // url_ = 'ep-dot-facturanube.appspot.com';
     }
 
     var options = {
         hostname: url_,
-        path: '/stp/cobranza/TKN_ACJP_SINUBE_2022',
+        path: '/abono',
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
